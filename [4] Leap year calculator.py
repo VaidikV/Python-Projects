@@ -13,13 +13,15 @@ print(check2)
 print(check3)
 
 
-if check1 != 0:
-    print("Not leap year.")
-elif check2 != 0:
-    print("Leap year.")
-elif check3 != 0:
-    print("Not leap year.")
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year.")
+        else:
+            print("Not leap year.")
+    else:
+        print("Leap year.") 
 else:
-    print("Leap year.")
+    print("Not leap year.")
 
   
