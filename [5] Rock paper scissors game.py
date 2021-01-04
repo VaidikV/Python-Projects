@@ -31,29 +31,31 @@ user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 f
 
 if user_choice >= 3:
     print("You chose a value that doesn't exist. You lose.")
-
-print(rps[user_choice])
-
-print("Computer chose:")
-
-computer = random.randint(0, 2)
-print(rps[computer])
-
-if user_choice == computer:
-    print("It's a draw.")
-elif user_choice == 0 and computer == 1:
-    print("You lose.")
-elif user_choice == 0 and computer == 2:
-    print("You Win!")
-elif user_choice == 1 and computer == 0:
-    print("You Win!")
-elif user_choice == 1 and computer == 2:
-    print("You lose.")
-elif user_choice == 2 and computer == 0:
-    print("You lose.")
-elif user_choice == 2 and computer == 1:
-    print("You Win!")
+else:
+    print(rps[user_choice])
+    print("Computer chose:")
     
+    computer = random.randint(0, 2)
+    print(rps[computer])
+
+    if user_choice == computer:
+        print("It's a draw.")
+    elif user_choice == 0 and computer == 1:
+        print("You lose.")
+    elif user_choice == 0 and computer == 2:
+        print("You Win!")
+    elif user_choice == 1 and computer == 0:
+        print("You Win!")
+    elif user_choice == 1 and computer == 2:
+        print("You lose.")
+    elif user_choice == 2 and computer == 0:
+        print("You lose.")
+    elif user_choice == 2 and computer == 1:
+        print("You Win!")
+
+    
+
+  
 
 
 
