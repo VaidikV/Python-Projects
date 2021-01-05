@@ -1,8 +1,5 @@
-# 🚨 Don't change the code below 👇
+print("Leap year calculator")
 year = int(input("Which year do you want to check? "))
-# 🚨 Don't change the code above 👆
-
-#Write your code below this line 👇
 
 check1 = year % 4
 check2 = year % 100
